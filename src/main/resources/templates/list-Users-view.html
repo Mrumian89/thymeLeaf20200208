@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+<table class="table">
+    <thread>
+        <tr>
+            <td>Id:</td>
+            <td>Imię:</td>
+            <td>Nazwisko:</td>
+            <td>Wiek:</td>
+        </tr>
+    </thread>
+    <tbody>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.nazwisko}"></td>
+        <td th:text="${user.wiek}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<!--<p th:text="${user.id}"></p>
+<p th:text="${user.name}"></p>
+<p th:text="${user.nazwisko}"></p>
+<p th:text="${user.wiek}"></p>-->
+
+</div>
+</body>
+</html>
+
+
