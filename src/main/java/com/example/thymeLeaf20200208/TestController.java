@@ -16,7 +16,7 @@ import java.util.List;
 @Controller
 public class TestController {
 
-    public class NotFoundException extends RuntimeException {
+    public static class NotFoundException extends RuntimeException {
     }
 
     public class NumberFormatException extends RuntimeException {
@@ -39,9 +39,9 @@ public class TestController {
     }
 
     @GetMapping("/addUser")
-    public String addUser(Model model) {
-        model.addAttribute("user", new User());
-        return "addUser";
+        public String addUser(Model model) {
+            model.addAttribute("user", new User());
+            return "addUser";
     }
 
     @GetMapping("/getUser/{id}")
