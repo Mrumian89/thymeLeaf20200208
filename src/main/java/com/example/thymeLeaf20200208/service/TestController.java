@@ -1,8 +1,7 @@
-package com.example.thymeLeaf20200208;
+package com.example.thymeLeaf20200208.service;
 
 
 import com.example.thymeLeaf20200208.model.User;
-import com.example.thymeLeaf20200208.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,20 +20,26 @@ public class TestController {
 
     public class NumberFormatException extends RuntimeException {
     }
+}
 
 
-    @Autowired
+  /*  @Autowired
     UserService userService;
+
+
 
     @GetMapping("/listUsers")
     public String listUsers(Model model) {
-/*        List<User> users = new ArrayList<>();
+        List<User> users = new ArrayList<>();
         users.add(new User(1, "Anna", "Kowalska", 22));
         users.add(new User(2, "Anna", "Kowalska", 32));
         users.add(new User(3, "Anna", "Kowalska", 45));
         users.add(new User(4, "Anna", "Kowalska", 10));
-        users.add(new User(5, "Anna", "Kowalska", 29));*/
+        users.add(new User(5, "Anna", "Kowalska", 29));
+
         model.addAttribute("users", userService.listUsers());
+
+
         return "list-Users-view";
     }
 
@@ -89,3 +94,4 @@ public class TestController {
     }
 }
 
+*/
